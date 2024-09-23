@@ -26,7 +26,7 @@ class Product(Base):
             db_async_session: AsyncSession,
             product_schema: schemas.Product
     ) -> "models.Product":
-        new_product = Product(**product_schema.dict())
+        new_product = Product(**product_schema.model_dump())
 
         db_async_session.add(new_product)
         try:

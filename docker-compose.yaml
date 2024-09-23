@@ -1,7 +1,7 @@
 services:
   warehouse_db:
     container_name: warehouse_db
-    image: postgres:16.1
+    image: postgres:16.2
     restart: always
     environment:
       - POSTGRES_USER=admin
