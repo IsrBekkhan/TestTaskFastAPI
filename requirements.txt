@@ -1,6 +1,7 @@
-aiosqlite==0.20.0
 annotated-types==0.7.0
 anyio==4.5.0
+async-timeout==4.0.3
+asyncpg==0.29.0
 click==8.1.7
 exceptiongroup==1.2.2
 fastapi==0.115.0

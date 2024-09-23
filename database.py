@@ -2,7 +2,7 @@ from sqlalchemy.ext.asyncio import AsyncSession, create_async_engine
 from sqlalchemy.orm import declarative_base, sessionmaker
 
 
-DATABASE_URL = "sqlite+aiosqlite:///./warehouse.db"
+DATABASE_URL = "postgresql+asyncpg://admin:admin@warehouse_db:5432/warehouse_db"
 
 
 engine = create_async_engine(DATABASE_URL, echo=True)
